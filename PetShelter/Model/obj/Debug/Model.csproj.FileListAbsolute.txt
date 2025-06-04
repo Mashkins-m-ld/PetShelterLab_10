@@ -1,0 +1,9 @@
+C:\Users\Maria\source\repos\Model\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\Maria\source\repos\Model\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\Maria\source\repos\Model\Model\bin\Debug\Model.dll
+C:\Users\Maria\source\repos\Model\Model\bin\Debug\Model.pdb
+C:\Users\Maria\source\repos\Model\Model\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Maria\source\repos\Model\Model\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Maria\source\repos\Model\Model\obj\Debug\Model.csproj.Up2Date
+C:\Users\Maria\source\repos\Model\Model\obj\Debug\Model.dll
+C:\Users\Maria\source\repos\Model\Model\obj\Debug\Model.pdb
