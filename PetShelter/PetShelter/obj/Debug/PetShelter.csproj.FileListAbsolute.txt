@@ -1,0 +1,14 @@
+C:\Users\Maria\all_my_deals\study\IT\PetShelter\PetShelter\obj\Debug\PetShelter.csproj.AssemblyReference.cache
+C:\Users\Maria\all_my_deals\study\IT\PetShelter\PetShelter\obj\Debug\PetShelter.Properties.Resources.resources
+C:\Users\Maria\all_my_deals\study\IT\PetShelter\PetShelter\obj\Debug\PetShelter.csproj.GenerateResource.cache
+C:\Users\Maria\all_my_deals\study\IT\PetShelter\PetShelter\obj\Debug\PetShelter.csproj.CoreCompileInputs.cache
+C:\Users\Maria\all_my_deals\study\IT\PetShelter\PetShelter\bin\Debug\PetShelter.exe.config
+C:\Users\Maria\all_my_deals\study\IT\PetShelter\PetShelter\bin\Debug\PetShelter.exe
+C:\Users\Maria\all_my_deals\study\IT\PetShelter\PetShelter\bin\Debug\PetShelter.pdb
+C:\Users\Maria\all_my_deals\study\IT\PetShelter\PetShelter\bin\Debug\Model.dll
+C:\Users\Maria\all_my_deals\study\IT\PetShelter\PetShelter\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Maria\all_my_deals\study\IT\PetShelter\PetShelter\bin\Debug\Model.pdb
+C:\Users\Maria\all_my_deals\study\IT\PetShelter\PetShelter\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Maria\all_my_deals\study\IT\PetShelter\PetShelter\obj\Debug\PetShelter.csproj.Up2Date
+C:\Users\Maria\all_my_deals\study\IT\PetShelter\PetShelter\obj\Debug\PetShelter.exe
+C:\Users\Maria\all_my_deals\study\IT\PetShelter\PetShelter\obj\Debug\PetShelter.pdb
