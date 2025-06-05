@@ -9,8 +9,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Model;
 using Model.Data;
+using Model;
+using Model.Core;
 
 namespace PetShelter
 {
@@ -33,6 +34,8 @@ namespace PetShelter
             this.Text = "Все питомцы";
             this.Size = new Size(1000, 600);
             this._tableType = "All";
+
+            MessageBox.Show("all");
 
             //MessageBox.Show($"{cats.Count}");
 
@@ -106,9 +109,10 @@ namespace PetShelter
             this.Text = title;
             this.Size = new Size(800, 600);
             this._tableType = "Cat";
+            MessageBox.Show("cats");
 
             // Создаем таблицу
-            dataGridView = new DataGridView
+            this.dataGridView = new DataGridView
             {
                 Dock = DockStyle.Fill,
                 AutoGenerateColumns = true,
@@ -150,9 +154,10 @@ namespace PetShelter
             this.Size = new Size(800, 600);
             this._tableType = "Dog";
 
+            MessageBox.Show("dogs");
 
             // Создаем таблицу
-            dataGridView = new DataGridView
+            this.dataGridView = new DataGridView
             {
                 Dock = DockStyle.Fill,
                 AutoGenerateColumns = true,
@@ -192,9 +197,10 @@ namespace PetShelter
             this.Text = title;
             this.Size = new Size(800, 600);
             this._tableType = "Rabbit";
+            MessageBox.Show("rabbits");
 
             // Создаем таблицу
-            dataGridView = new DataGridView
+            this.dataGridView = new DataGridView
             {
                 Dock = DockStyle.Fill,
                 AutoGenerateColumns = true,
@@ -383,24 +389,7 @@ namespace PetShelter
             else
             {
                 // Проверяем основную таблицу
-                DataGridView dgv;
-                switch (_tableType)
-                {
-                    case "Cat":
-                        dgv = dataGridViewCats;
-                        break;
-                    case "Dog":
-                        dgv = dataGridViewDogs;
-                        break;
-                    case "Rabbit":
-                        dgv = dataGridViewRabbits;
-                        break;
-                    default:
-                        dgv = dataGridView;
-                        break;
-                }
-
-                petsToRemove.AddRange(GetSelectedPets(dgv));
+                petsToRemove.AddRange(GetSelectedPets(dataGridView));
             }
 
             if (petsToRemove.Count == 0)
@@ -516,21 +505,35 @@ namespace PetShelter
         {
             List<Pet> selectedPets = new List<Pet>();
 
-            if (dataGridView == null) return selectedPets;
+            if (dataGridView == null)
+            {
+                MessageBox.Show("DataGridView is null.");
+                return selectedPets;
+            }
 
             foreach (DataGridViewRow row in dataGridView.Rows)
             {
                 if (row.Cells["CheckboxColumn"].Value is bool isSelected && isSelected)
                 {
-                    if (row.DataBoundItem is Pet pet)
+                    if (row.DataBoundItem is Pet pet) // Приводим к базовому типу
                     {
                         selectedPets.Add(pet);
+                    }
+                    else
+                    {
+                        MessageBox.Show("DataBoundItem is not a Pet.");
                     }
                 }
             }
 
+            if (selectedPets.Count == 0)
+            {
+                //MessageBox.Show("No pets selected for deletion.");
+            }
+
             return selectedPets;
         }
+
 
 
     }

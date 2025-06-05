@@ -13,8 +13,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Model;
 using Model.Data;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using System.Reflection;
 
 namespace PetShelter
 {
