@@ -35,7 +35,7 @@ namespace PetShelter
             this.Size = new Size(1000, 600);
             this._tableType = "All";
 
-            MessageBox.Show("all");
+            //MessageBox.Show("all");
 
             //MessageBox.Show($"{cats.Count}");
 
@@ -109,7 +109,7 @@ namespace PetShelter
             this.Text = title;
             this.Size = new Size(800, 600);
             this._tableType = "Cat";
-            MessageBox.Show("cats");
+            //MessageBox.Show("cats");
 
             // Создаем таблицу
             this.dataGridView = new DataGridView
@@ -154,7 +154,7 @@ namespace PetShelter
             this.Size = new Size(800, 600);
             this._tableType = "Dog";
 
-            MessageBox.Show("dogs");
+            //MessageBox.Show("dogs");
 
             // Создаем таблицу
             this.dataGridView = new DataGridView
@@ -197,7 +197,7 @@ namespace PetShelter
             this.Text = title;
             this.Size = new Size(800, 600);
             this._tableType = "Rabbit";
-            MessageBox.Show("rabbits");
+            //MessageBox.Show("rabbits");
 
             // Создаем таблицу
             this.dataGridView = new DataGridView
